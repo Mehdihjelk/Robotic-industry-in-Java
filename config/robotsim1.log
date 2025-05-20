@@ -1,0 +1,20 @@
+
+#On crée un deuxième fichier au cas où plusieurs instances de l’application 
+#tournent en même temps (ça peut arriver si on exécute deux fois l'app ou si le fichier précédent n'est pas libéré)
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-05-26T08:01:26.821062400Z</date>
+  <millis>1716710486821</millis>
+  <nanos>62400</nanos>
+  <sequence>0</sequence>
+  <logger>test.SimulatorApp</logger>
+  <level>INFO</level>
+  <class>test.SimulatorApp</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Starting</message>
+</record>
+</log>
