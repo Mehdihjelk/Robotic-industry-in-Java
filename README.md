@@ -57,24 +57,6 @@ config/
 - Java **17**
 - A Java IDE (Eclipse recommended, project already includes `.project` and `.classpath`)
 
-## Run The Project
-
-### Option 1: Eclipse (recommended)
-
-1. Import the folder as an existing Eclipse Java project.
-2. Ensure the JRE is Java 17.
-3. Run `test.SimulatorApp` (or use `config/SimulatorApp.launch`).
-
-### Option 2: Command line
-
-From the project root, compile and run:
-
-```powershell
-mkdir bin -ErrorAction SilentlyContinue
-javac -cp "libs/*" -d bin (Get-ChildItem -Path source -Recurse -Filter *.java | ForEach-Object { $_.FullName })
-java -Djava.util.logging.config.file=config/logging.properties -cp "bin;libs/*" test.SimulatorApp
-```
-
 ## Notes
 
 - Robots move with small pauses on some target zones to emulate task execution timing.
